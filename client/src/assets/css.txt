@@ -1,0 +1,74 @@
+/* --- Responsive Design --- */
+@media screen and (max-width: 768px) {
+  main {
+        padding-top: 80px; 
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%; /* Prevent overflow */
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .word-card {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #wordsContainer, .features-section {
+        grid-template-columns: 1fr !important;
+    }
+
+  .hero-content h1 {
+        font-size: 2.2rem; /* Smaller heading for mobile */
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.8rem;
+    }
+
+    .hero-btn {
+        width: 100%; /* Full width buttons are easier to tap */
+    }
+
+    /* Modal Adjustments */
+    .modal-content {
+        width: 95%; /* Use almost full width */
+        margin: 10px;
+        padding: 1.5rem 1rem; /* Slightly less padding */
+        max-height: 85vh; /* Prevent modal from going off-screen */
+        overflow-y: auto; /* Scroll inside modal if content is long */
+    }
+
+    /* Settings Page Tweaks */
+    .setting-item {
+        flex-direction: column; /* Stack label and toggle */
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .setting-item .switch, 
+    .setting-item select {
+        align-self: flex-end; /* Put controls to the right */
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .profile-pic.large {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .app-title {
+        font-size: 1.3rem;
+    }
+}
