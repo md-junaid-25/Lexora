@@ -1136,6 +1136,10 @@ input:checked + .slider:before {
     width: 100%;
   }
 
+  #wordsPage{
+    width: 100%;
+  }
+
   header{
       width: 100%;
       height: 70px;
@@ -1221,6 +1225,7 @@ input:checked + .slider:before {
     main{
         margin: 2rem;
         margin-bottom: 5rem;
+        margin-left: 0;
         padding: 1rem;
         width: 100%;
     }
@@ -1232,7 +1237,8 @@ input:checked + .slider:before {
     }
 
     .search-bar input {
-        width: 140%;
+        width: 120%;
+        height: 70px;
         margin-top: 30px;
     }
 
@@ -1263,7 +1269,11 @@ input:checked + .slider:before {
     }
 
     /* --- Setting Page Responsive --- */
-
+  
+    #settingspage{
+      margin-left: 0;
+    }
+  
     .page-title {
         font-size: 1.5rem;
         margin-top: 2rem;
