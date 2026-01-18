@@ -1248,10 +1248,11 @@ input:checked + .slider:before {
         width: 120%;
         height: 70px;
         margin-top: 30px;
+        font-size: 1rem;
     }
 
     .search-bar i {
-        right: -100px;
+        right: -40px;
         margin-top: 15px;
     }
 
@@ -1262,7 +1263,7 @@ input:checked + .slider:before {
     .add-word-btn {
         position: fixed;
         bottom: 80px;
-        right: 20px;
+        right: 40px;
         width: 60px;
         height: 65px;
         border-radius: var(--border-radius);
