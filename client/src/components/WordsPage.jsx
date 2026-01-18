@@ -32,7 +32,7 @@ const WordsPage = ({ words, sortBy, highlightDifficult, onAddWord, onEditWord, o
 
   const handleEditClick = (word) => {
     setEditingWord(word);
-    setIsAddModalOpen(true);
+    setIsModalOpen(true);;
   };
 
   const handleModalClose = () => {
@@ -78,11 +78,11 @@ const WordsPage = ({ words, sortBy, highlightDifficult, onAddWord, onEditWord, o
         ) : (
           processedWords.map(word => (
             <WordCard 
-              key={word.id} 
+              key={word._id} 
               word={word} 
               highlight={highlightDifficult}
               onEdit={() => handleEditClick(word)}
-              onDelete={() => onDeleteWord(word.id)}
+              onDelete={() => onDeleteWord(word._id)}
             />
           ))
         )}
