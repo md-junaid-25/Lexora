@@ -1232,6 +1232,14 @@ input:checked + .slider:before {
 
     /* --- Words Page Responsive --- */
 
+    #wordscontainer{
+      gap: 1rem;
+    }
+
+    #wordspage, #homepage{
+      margin-left: 1rem;
+    }
+
     .empty-state{
       margin: 0;
     }
@@ -1243,7 +1251,7 @@ input:checked + .slider:before {
     }
 
     .search-bar i {
-        right: -70px;
+        right: -100px;
         margin-top: 15px;
     }
 
@@ -1260,7 +1268,7 @@ input:checked + .slider:before {
         border-radius: var(--border-radius);
         font-size: 2rem;
         text-align: center;
-        padding: 10px;
+        padding: 20px 10px 10px 10px;
         margin-left: 0;
     }
 
