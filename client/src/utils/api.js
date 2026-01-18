@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // Create an axios instance
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api', // Your Node server URL
+  baseURL: 'https://lexora-otlc.onrender.com/api', // Node server URL
 });
 
 // Automatically add the Token to every request if it exists
