@@ -32,7 +32,7 @@ const WordsPage = ({ words, sortBy, highlightDifficult, onAddWord, onEditWord, o
 
   const handleEditClick = (word) => {
     setEditingWord(word);
-    setIsModalOpen(true);;
+    setIsAddModalOpen(true);
   };
 
   const handleModalClose = () => {
@@ -62,7 +62,7 @@ const WordsPage = ({ words, sortBy, highlightDifficult, onAddWord, onEditWord, o
         <i className="fas fa-search"></i>
       </div>
 
-      <button className="add-word-btn" onClick={() => setIsAddModalOpen(true)}>
+      <button className="add-word-btn" onClick={() => {setIsAddModalOpen(true); setEditingWord(null);}}>
         <i className="fas fa-plus"></i>&nbsp;&nbsp;
         <span>Add Word</span>
       </button>
